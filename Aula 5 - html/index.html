@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table td,
+        table th {
+            border: 1px solid gray;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            margin: 5px 0;
+            font-size: 14px;
+
+        }
+        tfoot td , table th{
+        background: gray;
+        }
+        tfoot td{
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur </p>
+    <table>
+        <caption>Uma descrição</caption>
+        <thead>
+            <tr>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>corpo 1</td>
+                <td>corpo 2</td>
+                <td>corpo 3</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="">aqui</td>
+                
+                <td>corpo 3</td>
+            </tr>
+            <tr>
+                <td>corpo 1</td>
+                <td>corpo 2</td>
+                <td>corpo 3</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2">corpo 1</td>
+           
+                <td>total</td>
+            </tr>
+             <tr>
+            
+                <td>55 reais</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
